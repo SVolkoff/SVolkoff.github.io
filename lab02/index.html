@@ -1,8 +1,8 @@
 <HTML>
 <BODY>
 
-<canvas id='lab02' height='500' width='1000' style='border-width: 3px' />
-<canvas id='lab02Smooth' height='500' width='1000' style='border-width: 3px' />
+<canvas id='lab02' height='500' width='1200' style='border-width: 3px' />
+<canvas id='lab02Smooth' height='500' width='1200' style='border-width: 3px' />
 <script>
 var buffer =[];
 var img = new Image();
@@ -61,7 +61,7 @@ function draw(img) {
 	for(k = 0; k < dataSmooth.length; k++) {
 		dataSmooth[k] = buffer[k];
 	}
-	ctx.putImageData(imageDataSmooth, 600, 0);
+	ctx.putImageData(imageDataSmooth, 500, 0);
 }
 	
 </script> 
