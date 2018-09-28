@@ -1,8 +1,8 @@
 <HTML>
 <BODY>
 
-<canvas id='lab02' height='500' width='1000' style='border-width: 3px' />
-<canvas id='lab02Smooth' height='500' width='1000' style='border-width: 3px' />
+<canvas id='lab2' height='500' width='500' style='border-width: 3px' />
+<canvas id='lab2Smooth' height='500' width='500' style='border-width: 3px' />
 <script>
 var buffer =[];
 var img = new Image();
@@ -11,7 +11,7 @@ img.onload = function() {
   draw(this);
 };
 function draw(img) {
-	var canvas = document.getElementById('lab02');
+	var canvas = document.getElementById('lab2');
     var ctx = canvas.getContext('2d');
     ctx.drawImage(img, 0, 0);
     img.style.display = 'none';
@@ -52,7 +52,7 @@ function draw(img) {
     };
 	smooth();
 	
-	var canvasSmooth = document.getElementById('lab02Smooth');
+	var canvasSmooth = document.getElementById('lab2Smooth');
 	var ctxs = canvasSmooth.getContext('2d');
 	
 	imageDataSmooth = ctxs.getImageData(500, 0, img.width, img.height);
@@ -64,6 +64,3 @@ function draw(img) {
 	ctx.putImageData(imageDataSmooth, 600, 0);
 }
 	
-</script> 
-</BODY> 
-</HTML>
